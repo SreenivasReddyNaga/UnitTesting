@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Calculator Unit test suite" parallel="methods"
+	thread-count="10">
+	<test name="Data Driven Unit Test">
+		<!-- <groups>
+			<run>
+				<exclude name="negativeTest"></exclude>
+			</run>
+		</groups> -->
+		<classes>
+			<class name="com.epam.tat.unittest.AdditionUnitTest" />
+		</classes>
+
+	</test>
+
+
+	<test name="Unit Test">
+
+		<classes>
+			<class name="com.epam.tat.unittest.CommonUnitTest" />
+		</classes>
+
+	</test>
+
+</suite>
